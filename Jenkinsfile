@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                build 'SeleniumMaven'
+                build 'seleniumMaven'
             }
         }
         stage('Deploy') {
@@ -20,7 +20,7 @@ pipeline {
     }
     post {
         always{
-            echo 'pipeline done'
+            echo 'Pipeline Done!'
         }
     }
 }
