@@ -20,6 +20,7 @@ pipeline {
     }
     post {
         always{
+            echo "TimeStamp: ${currentBuild.startTimeInMillis}"
             echo 'Pipeline Done!!!'
         }
     }
